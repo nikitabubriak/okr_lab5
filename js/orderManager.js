@@ -107,7 +107,7 @@ async function submitOrder ()
 
     try 
     {
-        await fetch ('https://my-json-server.typicode.com/nikitabubriak/okr_lab4/orders',
+        await fetch ('https://my-json-server.typicode.com/nikitabubriak/okr_lab5/orders',
             {
                 method: 'POST',
                 headers: 
