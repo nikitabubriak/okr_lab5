@@ -1,0 +1,27 @@
+{
+  "name": "okr_lab5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikitabubriak/okr_lab5.git"
+  },
+  "author": "Nikita Bubriak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikitabubriak/okr_lab5/issues"
+  },
+  "browserslist": [
+    "> 0.25%, not dead"
+  ],
+  "homepage": "https://github.com/nikitabubriak/okr_lab5#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.7",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3"
+  }
+}

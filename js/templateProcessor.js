@@ -4,6 +4,7 @@ class TemplateProcessor
     {
         const rootNode = document.getElementById('main-container');
         rootNode.innerHTML = view;
+        window.scrollTo(0,0);
     }
 }
 
