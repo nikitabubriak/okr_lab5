@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+
+    <meta charset = "UTF-8">
+    <title>lab4</title>
+    <link rel = "stylesheet" href = "styles.css">
+
+</head>
+
+<body>
+
+    <header id = "header">
+        <a id = "logo" href = "#">
+            <img src = "resources/logo.jpg" alt = "logo">
+        </a>
+
+        <div class = "search">
+            <input type = "text" placeholder = "Search">
+            <a href = "#catalog"><button>🔍</button></a>
+        </div>
+        
+        <nav class = "menu">
+            <ul class = "menu-list">
+                <li class = "menu-item">
+                    <a class = "menu-item-link" href = "#">
+                        <span class = "menu-item-title">Contacts</span>
+                    </a>
+                </li>
+                <li class = "menu-item">
+                    <a class = "menu-item-link" href = "#">
+                        <span class = "menu-item-title">Help</span>
+                    </a>
+                </li>
+                <li class = "menu-item">
+                    <a class = "menu-item-link" href = "#">
+                        <span class = "menu-item-title">Sign up</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class = "sidebar">
+        <nav class = "catalog">
+            <ul class = "catalog-list">
+
+                <li class = "catalog-item">
+                    <a class = "catalog-item-link" href = "#catalog">
+                        <span class = "catalog-item-title">Catalog</span>
+                    </a>
+                </li>
+        </nav>
+
+        <nav class = "catalog">
+            
+            <ul class = "catalog-list">
+
+                <li class = "catalog-item">
+                    <a class = "catalog-item-link" href = "#catalog/adventure">
+                        <span class = "catalog-item-title">Adventure</span>
+                    </a>
+                </li>
+                <li class = "catalog-item">
+                    <a class = "catalog-item-link" href = "#catalog/roguelike">
+                        <span class = "catalog-item-title">Roguelike</span>
+                    </a>
+                </li>
+                <li class = "catalog-item">
+                    <a class = "catalog-item-link" href = "#catalog/rpg">
+                        <span class = "catalog-item-title">RPG</span>
+                    </a>
+                </li>
+                <li class = "catalog-item">
+                    <a class = "catalog-item-link" href = "#catalog/strategy">
+                        <span class = "catalog-item-title">Strategy</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+        <nav class = "catalog">
+            <ul class = "catalog-list">
+
+                <li class = "catalog-item">
+                    <a class = "catalog-item-link" href = "#offer/autumn_sale">
+                        <span class = "catalog-item-title">Autumn Sale!</span>
+                    </a>
+                </li>
+                <li class = "catalog-item">
+                    <a class = "catalog-item-link" href = "#offer/winter_sale">
+                        <span class = "catalog-item-title">Winter Sale!</span>
+                    </a>
+                </li>
+                <li class = "catalog-item">
+                    <a class = "catalog-item-link" href = "#offer/summer_sale">
+                        <span class = "catalog-item-title">Summer Sale!</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <main class = "container">
+        <div id = "loader" class = "loader-dual-ring overlay hidden"></div>
+
+        <div id = "main-container">
+
+        </div>
+    </main>
+
+    <div class = "fixed">
+        
+        <div class = "account-actions">
+            <div class = "actions-bar">
+                <a class = "action-link" href = "#cart">
+                <div class = "action" id = "shopping-cart">
+                    <img src = "resources/icon_shopping_cart.svg" alt = "shopping-cart">
+                    <span id = "total-count">0</span>
+                    <span class = "action-title">Cart</span>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class = "up-action">
+            <button id = "up-button">
+                <img src = "resources/icon_arrow_upward.svg" alt = "scroll-to-top">
+        </button>
+        </div>
+    </div>
+    
+
+    <footer id = "footer">
+        <nav class = "footer-menu">
+            <ul class = "footer-category">
+                <li class = "footer-category-item">
+                    <span class = "footer-category-title">Help</span>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "#">
+                        <span class = "footer-category-item-title">Delivery and payment</span>
+                    </a>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "#">
+                        <span class = "footer-category-item-title">Credit</span>
+                    </a>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "#">
+                        <span class = "footer-category-item-title">Warranty</span>
+                    </a>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "#">
+                        <span class = "footer-category-item-title">Refund policy</span>
+                    </a>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "#">
+                        <span class = "footer-category-item-title">Service center</span>
+                    </a>
+                </li>
+            </ul>
+        
+            <ul class = "footer-category">
+                <li class = "footer-category-item">
+                    <span class = "footer-category-title">Company</span>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "#">
+                        <span class = "footer-category-item-title">About us</span>
+                    </a>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "#">
+                        <span class = "footer-category-item-title">Terms of use</span>
+                    </a>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "#">
+                        <span class = "footer-category-item-title">Contacts</span>
+                    </a>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "#">
+                        <span class = "footer-category-item-title">Jobs</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class = "footer-category">
+                <li class = "footer-category-item">
+                    <span class = "footer-category-title">Services</span>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "#">
+                        <span class = "footer-category-item-title">Information</span>
+                    </a>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "#">
+                        <span class = "footer-category-item-title">Information</span>
+                    </a>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "#">
+                        <span class = "footer-category-item-title">Information</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class = "footer-category">
+                <li class = "footer-category-item">
+                    <span class = "footer-category-title">Associates</span>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "#">
+                        <span class = "footer-category-item-title">Information</span>
+                    </a>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "#">
+                        <span class = "footer-category-item-title">Information</span>
+                    </a>
+                </li>
+                <li class = "footer-category-item">
+                    <a class = "footer-category-item-link" href = "#">
+                        <span class = "footer-category-item-title">Information</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div id = "disclaimer">
+            <br>
+            <p>DISCLAIMER</p>
+            <p>This website is not commercial and was created during the university course assignment for educational purposes only</p>
+            <p>All rights belong to their respective owners</p>
+            <br>
+        </div>
+    </footer>
+
+    <script src = "js/index.js" type = "module"></script>
+
+</body>
+
+</html>

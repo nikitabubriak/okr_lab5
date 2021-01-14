@@ -1,0 +1,294 @@
+{
+
+  "offers": 
+  [
+    {
+      "url": "autumn_sale",
+      "name": "Autumn Sale",
+      "description": "The Steam Autumn Sale is now live!",
+      "image": "resources/offers/autumn_sale.jpg",
+      "datePosted": "01.12.2020"
+    },
+    {
+      "url": "winter_sale",
+      "name": "Winter Sale",
+      "description": "Shop in The Steam Lunar New Year Sale!",
+      "image": "resources/offers/winter_sale.jpg",
+      "datePosted": "02.12.2020"
+    },
+    {
+      "url": "summer_sale",
+      "name": "Summer Sale",
+      "description": "The Steam Summer Getaway Sale is here!",
+      "image": "resources/offers/summer_sale.jpg",
+      "datePosted": "03.12.2020"
+    }
+  ],
+
+  "featuredProducts": [0,4,7,13],
+
+  "catalog":
+  [
+
+    [
+      {
+        "ID": 0,
+        "url": "adventure",
+        "name": "Adventure",
+        "description": "Adventure description"
+      },
+      {
+        "ID": 1,
+        "url": "roguelike",
+        "name": "Roguelike",
+        "description": "Roguelike description"
+      },
+      {
+        "ID": 2,
+        "url": "rpg",
+        "name": "RPG",
+        "description": "RPG description"
+      },
+      {
+        "ID": 3,
+        "url": "strategy",
+        "name": "Strategy",
+        "description": "Strategy description"
+      }
+    ],
+
+    [
+      {
+        "ID": 0,
+        "categoryID": 3,
+        "url": "factorio",
+        "name": "Factorio",
+        "description": "A great game",
+        "image": "resources/products/factorio.jpg",
+        "releaseDate": "14 Aug, 2020",
+        "developer": "Wube Software LTD.",
+        "publisher": "Wube Software LTD.",
+        "steamLink": "https://store.steampowered.com/app/427520/Factorio/",
+        "price": 350,
+        "relatedProducts": [14,15,16]
+      },
+      {
+        "ID": 1,
+        "categoryID": 0,
+        "url": "bioshock_infinite",
+        "name": "BioShock Infinite",
+        "description": "description",
+        "image": "resources/products/bioshock_infinite.jpg",
+        "releaseDate": "25 Mar, 2013",
+        "developer": "Irrational Games, Virtual Programming (Linux)",
+        "publisher": "2K",
+        "steamLink": "https://store.steampowered.com/app/8870/BioShock_Infinite/",
+        "price": 389,
+        "relatedProducts": [2,3,4]
+      },
+      {
+        "ID": 2,
+        "categoryID": 0,
+        "url": "dont_starve",
+        "name": "Don't Starve",
+        "description": "description",
+        "image": "resources/products/dont_starve.jpg",
+        "releaseDate": "23 Apr, 2013",
+        "developer": "Klei Entertainment",
+        "publisher": "Klei Entertainment",
+        "steamLink": "https://store.steampowered.com/app/219740/Dont_Starve/",
+        "price": 169,
+        "relatedProducts": [1,3,4]
+      },
+      {
+        "ID": 3,
+        "categoryID": 0,
+        "url": "ori_and_the_blind_forest",
+        "name": "Ori and the Blind Forest",
+        "description": "description",
+        "image": "resources/products/ori_and_the_blind_forest.jpg",
+        "releaseDate": "27 Apr, 2016",
+        "developer": "Moon Studios GmbH",
+        "publisher": "Xbox Game Studios",
+        "steamLink": "https://store.steampowered.com/app/387290/Ori_and_the_Blind_Forest_Definitive_Edition/",
+        "price": 279,
+        "relatedProducts": [2,4,5]
+      },
+      {
+        "ID": 4,
+        "categoryID": 0,
+        "url": "starbound",
+        "name": "Starbound",
+        "description": "description",
+        "image": "resources/products/starbound.jpg",
+        "releaseDate": "22 Jul, 2016",
+        "developer": "Chucklefish",
+        "publisher": "Chucklefish",
+        "steamLink": "https://store.steampowered.com/app/211820/Starbound/",
+        "price": 229,
+        "relatedProducts": [1,3,5]
+      },
+      {
+        "ID": 5,
+        "categoryID": 0,
+        "url": "terraria",
+        "name": "Terraria",
+        "description": "description",
+        "image": "resources/products/terraria.jpg",
+        "releaseDate": "16 May, 2011",
+        "developer": "Re-Logic",
+        "publisher": "Re-Logic",
+        "steamLink": "https://store.steampowered.com/app/105600/Terraria/",
+        "price": 169,
+        "relatedProducts": [2,3,4]
+      },
+      {
+        "ID": 6,
+        "categoryID": 1,
+        "url": "crypt_of_the_necrodancer",
+        "name": "Crypt of the NecroDancer",
+        "description": "description",
+        "image": "resources/products/crypt_of_the_necrodancer.jpg",
+        "releaseDate": "23 Apr, 2015",
+        "developer": "Brace Yourself Games",
+        "publisher": "Brace Yourself Games, Klei Entertainment",
+        "steamLink": "https://store.steampowered.com/app/247080/Crypt_of_the_NecroDancer/",
+        "price": 229,
+        "relatedProducts": [7,8,9]
+      },
+      {
+        "ID": 7,
+        "categoryID": 1,
+        "url": "darkest_dungeon",
+        "name": "Darkest Dungeon®",
+        "description": "description",
+        "image": "resources/products/darkest_dungeon.jpg",
+        "releaseDate": "19 Jan, 2016",
+        "developer": "Red Hook Studios",
+        "publisher": "Red Hook Studios",
+        "steamLink": "https://store.steampowered.com/app/262060/Darkest_Dungeon/",
+        "price": 164,
+        "relatedProducts": [6,8,9]
+      },
+      {
+        "ID": 8,
+        "categoryID": 1,
+        "url": "enter_the_gungeon",
+        "name": "Enter the Gungeon",
+        "description": "description",
+        "image": "resources/products/enter_the_gungeon.jpg",
+        "releaseDate": "5 Apr, 2016",
+        "developer": "Dodge Roll",
+        "publisher": "Devolver Digital",
+        "steamLink": "https://store.steampowered.com/app/311690/Enter_the_Gungeon/",
+        "price": 229,
+        "relatedProducts": [6,7,9]
+      },
+      {
+        "ID": 9,
+        "categoryID": 1,
+        "url": "rogue_legacy",
+        "name": "Rogue Legacy",
+        "description": "description",
+        "image": "resources/products/rogue_legacy.jpg",
+        "releaseDate": "27 Jun, 2013",
+        "developer": "Cellar Door Games",
+        "publisher": "Cellar Door Games",
+        "steamLink": "https://store.steampowered.com/app/241600/Rogue_Legacy/",
+        "price": 229,
+        "relatedProducts": [6,7,8]
+      },
+      {
+        "ID": 11,
+        "categoryID": 2,
+        "url": "stardew_valley",
+        "name": "Stardew Valley",
+        "description": "description",
+        "image": "resources/products/stardew_valley.jpg",
+        "releaseDate": "26 Feb, 2016",
+        "developer": "ConcernedApe",
+        "publisher": "ConcernedApe",
+        "steamLink": "https://store.steampowered.com/app/413150/Stardew_Valley/",
+        "price": 229,
+        "relatedProducts": [12,13]
+      },
+      {
+        "ID": 12,
+        "categoryID": 2,
+        "url": "the_elder_scrolls_v_skyrim",
+        "name": "The Elder Scrolls V: Skyrim",
+        "description": "description",
+        "image": "resources/products/the_elder_scrolls_v_skyrim.jpg",
+        "releaseDate": "11 Nov, 2011",
+        "developer": "Bethesda Game Studios",
+        "publisher": "Bethesda Softworks",
+        "steamLink": "https://store.steampowered.com/app/72850/The_Elder_Scrolls_V_Skyrim/",
+        "price": 520,
+        "relatedProducts": [11,13]
+      },
+      {
+        "ID": 13,
+        "categoryID": 2,
+        "url": "the_witcher_3_wild_hunt",
+        "name": "The Witcher® 3: Wild Hunt",
+        "description": "description",
+        "image": "resources/products/the_witcher_3_wild_hunt.jpg",
+        "releaseDate": "18 May, 2015",
+        "developer": "CD PROJEKT RED",
+        "publisher": "CD PROJEKT RED",
+        "steamLink": "https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/",
+        "price": 539,
+        "relatedProducts": [11,12]
+      },
+      {
+        "ID": 14,
+        "categoryID": 3,
+        "url": "cities_skylines",
+        "name": "Cities: Skylines",
+        "description": "description",
+        "image": "resources/products/cities_skylines.jpg",
+        "releaseDate": "10 Mar, 2015",
+        "developer": "Colossal Order Ltd.",
+        "publisher": "Paradox Interactive",
+        "steamLink": "https://store.steampowered.com/app/255710/Cities_Skylines/",
+        "price": 379,
+        "relatedProducts": [0,15,16]
+      },
+      {
+        "ID": 15,
+        "categoryID": 3,
+        "url": "rimworld",
+        "name": "RimWorld",
+        "description": "description",
+        "image": "resources/products/rimworld.jpg",
+        "releaseDate": "17 Oct, 2018",
+        "developer": "Ludeon Studios",
+        "publisher": "Ludeon Studios",
+        "steamLink": "https://store.steampowered.com/app/294100/RimWorld/",
+        "price": 429,
+        "relatedProducts": [0,14,16]
+      },
+      {
+        "ID": 16,
+        "categoryID": 3,
+        "url": "sid_meiers_civilization_v",
+        "name": "Sid Meier's Civilization® V",
+        "description": "description",
+        "image": "resources/products/sid_meiers_civilization_v.jpg",
+        "releaseDate": "23 Sep, 2010",
+        "developer": "Firaxis Games, Aspyr (Mac), Aspyr (Linux)",
+        "publisher": "2K, Aspyr (Mac), Aspyr (Linux)",
+        "steamLink": "https://store.steampowered.com/app/8930/Sid_Meiers_Civilization_V/",
+        "price": 389,
+        "relatedProducts": [0,14,15]
+      }
+      
+    ]
+
+  ],
+
+
+  "orders": 
+  []
+  
+}
