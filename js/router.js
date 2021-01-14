@@ -11,36 +11,36 @@ class Router
         
         switch (currentHash) 
         {
-            case 'offer':
-                viewName = 'offerPage';
-                endpointName = 'offers';
-                break;
+        case 'offer':
+            viewName = 'offerPage';
+            endpointName = 'offers';
+            break;
 
-            case 'catalog':
-                viewName = 'catalogPage';
-                endpointName = 'catalog';
-                break;
+        case 'catalog':
+            viewName = 'catalogPage';
+            endpointName = 'catalog';
+            break;
 
-            case 'product':
-                viewName = 'productPage';
-                endpointName = 'catalog';
-                break;
+        case 'product':
+            viewName = 'productPage';
+            endpointName = 'catalog';
+            break;
             
-            case 'cart':
-                viewName = 'cartPage';
-                endpointName = 'catalog';
-                break;
+        case 'cart':
+            viewName = 'cartPage';
+            endpointName = 'catalog';
+            break;
 
-            case 'order':
-                viewName = 'orderPage';
-                endpointName = 'db';
-                break;
+        case 'order':
+            viewName = 'orderPage';
+            endpointName = '';
+            break;
 
-            default:
-                viewName = 'homePage';
-                endpointName = 'db';
-                window.location.hash = '#';
-                break;
+        default:
+            viewName = 'homePage';
+            endpointName = 'db';
+            window.location.hash = '#';
+            break;
         }
 
         return {

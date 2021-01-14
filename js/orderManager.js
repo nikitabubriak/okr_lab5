@@ -1,40 +1,40 @@
 const countProducts = () =>
 {
-    let cart = JSON.parse(localStorage.getItem("cart"));
+    let cart = JSON.parse(localStorage.getItem('cart'));
     if (!cart) cart = {};
     let count = 0;
-    for (let [key, value] of Object.entries(cart)) count += Number(value);
-    document.getElementById("total-count").textContent = count;
-}
+    for (let [/*key, */value] of Object.entries(cart)) count += Number(value);
+    document.getElementById('total-count').textContent = count;
+};
 
 const cartAddProduct = () => 
 {
-    let count = document.getElementById("count").value;
-    if (count == "" || !count) return;
-    let btn = document.getElementById("add-to-cart-btn");
-    let cart = JSON.parse(localStorage.getItem("cart"));
+    let count = document.getElementById('count').value;
+    if (count == '' || !count) return;
+    let btn = document.getElementById('add-to-cart-btn');
+    let cart = JSON.parse(localStorage.getItem('cart'));
     if (!cart) cart = {};
     let id = btn.value;
     cart[id] = count;
-    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem('cart', JSON.stringify(cart));
     countProducts();
-}
+};
 
 const cartRemoveProduct = (id) =>
 {
-    let cart = JSON.parse(localStorage.getItem("cart"));
+    let cart = JSON.parse(localStorage.getItem('cart'));
     delete cart[id];
-    localStorage.setItem("cart", JSON.stringify(cart));
-    window.dispatchEvent(new HashChangeEvent("hashchange"));
+    localStorage.setItem('cart', JSON.stringify(cart));
+    window.dispatchEvent(new HashChangeEvent('hashchange'));
     countProducts();
-}
+};
 
 const cartClear = () =>
 {
-    localStorage.removeItem("cart");
-    localStorage.removeItem("totalPrice");
+    localStorage.removeItem('cart');
+    localStorage.removeItem('totalPrice');
     countProducts();
-}
+};
 
 const generateID = () =>
 {
@@ -47,7 +47,7 @@ const generateID = () =>
     }
     
     return id;
-}
+};
 
 const orderStatus = (response) => 
 {
@@ -73,21 +73,21 @@ const orderStatus = (response) =>
     
     cartClear();
     history.replaceState(null, null, document.location.pathname + `#order/${response.id}`);
-}
+};
 
 async function submitOrder ()
 {
-    const form = document.getElementById("order-form")
+    const form = document.getElementById('order-form');
     if (!form.checkValidity())
     {
         window.location.hash = '#order';
-        alert("Invalid form input. Please try again");
+        alert('Invalid form input. Please try again');
         return;
     }
-    if (document.getElementById("total-count").textContent == 0)
+    if (document.getElementById('total-count').textContent == 0)
     {
         window.location.hash = '#catalog';
-        alert("Your cart is empty. Please try again");
+        alert('Your cart is empty. Please try again');
         return;
     }
     
@@ -101,28 +101,27 @@ async function submitOrder ()
         time: form.time.value,
         payment: form.payment.value,
         card: form.card.value,
-        cart: JSON.parse(localStorage.getItem("cart")),
-        total: JSON.parse(localStorage.getItem("totalPrice"))
-    }
+        cart: JSON.parse(localStorage.getItem('cart')),
+        total: JSON.parse(localStorage.getItem('totalPrice'))
+    };
 
     try 
     {
-        await fetch
-        (`https://my-json-server.typicode.com/nikitabubriak/okr_lab4/orders`,
-        {
-            method: 'POST',
-            headers: 
+        await fetch ('https://my-json-server.typicode.com/nikitabubriak/okr_lab4/orders',
+            {
+                method: 'POST',
+                headers: 
             {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(order)
-        })
-        .then((response) => response.json())
-        .then((data) => 
-        {
-            console.log('Success:', data);
-            orderStatus(data);
-        });
+                body: JSON.stringify(order)
+            })
+            .then((response) => response.json())
+            .then((data) => 
+            {
+                console.log('Success:', data);
+                orderStatus(data);
+            });
     } catch (error) 
     {
         console.error('Error:', error);
@@ -136,4 +135,4 @@ export {
     cartAddProduct,
     cartRemoveProduct,
     submitOrder
-}
+};

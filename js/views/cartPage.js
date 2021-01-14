@@ -1,6 +1,6 @@
 const view = (catalog) => 
 {
-    let cart = JSON.parse(localStorage.getItem("cart"));
+    let cart = JSON.parse(localStorage.getItem('cart'));
     let cartProducts = [];
     let totalPrice = 0;
 
@@ -30,8 +30,8 @@ const view = (catalog) =>
         <h2>Your shopping cart</h2><br>
         <div class = "products-grid">
         ${
-            cartProducts.map((product) =>
-            `
+    cartProducts.map((product) =>
+        `
             <div class = "product-tile">
                 <a class = "product-link" href = "#product/${product.url}">
                     <img src = "${product.image}" alt = "${product.name}">
@@ -40,22 +40,22 @@ const view = (catalog) =>
                 <br><span class = "product-price">${product.price} ₴</span>
                 <button class = "buy-button remove-button" id = "${product.ID}-remove-btn" value = ${product.ID}>Remove</button>
             </div>
-            `).join("")
-        }
+            `).join('')
+}
         </div>
     </div>
     <span class = "total-price">Total price: ${totalPrice} ₴</span>
     `;
 
-    localStorage.setItem("totalPrice", JSON.stringify(totalPrice));
+    localStorage.setItem('totalPrice', JSON.stringify(totalPrice));
 
     if (Object.keys(cart).length === 0 && cart.constructor === Object) 
-    {cartPage += `<a href = "#catalog"><button class = "buy-button" id = "proceed-to-order-btn">Your Cart is empty</button></a>`;}
+    {cartPage += '<a href = "#catalog"><button class = "buy-button" id = "proceed-to-order-btn">Your Cart is empty</button></a>';}
     else 
-    {cartPage += `<a href = "#order"><button class = "buy-button" id = "proceed-to-order-btn">Proceed to Order</button></a>`;}
+    {cartPage += '<a href = "#order"><button class = "buy-button" id = "proceed-to-order-btn">Proceed to Order</button></a>';}
 
     return cartPage;
-}
+};
 
 
 export default view;

@@ -6,7 +6,7 @@ const urlParser = (offers) =>
     {
         if (offers[i].url === subdir)   return offers[i];
     }
-}
+};
 
 const view = (offers) => 
 {
@@ -27,7 +27,7 @@ const view = (offers) =>
     `;
 
     return offerPage;
-}
+};
 
 
 export default view;

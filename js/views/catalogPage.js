@@ -10,7 +10,7 @@ const urlParser = (catalog) =>
     {
         if (catalog[0][i].url === subdir)   return catalog[0][i];
     }
-}
+};
 
 const getCategoryProducts = (category, products) =>
 {
@@ -25,7 +25,7 @@ const getCategoryProducts = (category, products) =>
     });
 
     return categoryProducts;
-}
+};
 
 const buildCategoryProductsGrid = (category, products) =>
 {
@@ -35,8 +35,8 @@ const buildCategoryProductsGrid = (category, products) =>
     `
     <div class = "products-grid">
         ${
-            categoryProducts.map((product) =>
-            `
+    categoryProducts.map((product) =>
+        `
             <div class = "product-tile">
                 <a class = "product-link" href = "#product/${product.url}">
                     <img src = "${product.image}" alt = "${product.name}">
@@ -44,13 +44,13 @@ const buildCategoryProductsGrid = (category, products) =>
                     <span class = "product-tile-price">${product.price} ₴</span>
                 </a>
             </div>
-            `).join("")
-        }
+            `).join('')
+}
     </div>
     `;
 
     return categoryPage;
-}
+};
 
 const view = (catalog) => 
 {
@@ -58,7 +58,7 @@ const view = (catalog) =>
 
     if (page === 'catalog')
     {
-        let catalogPage = `<div class = "products-container">`;
+        let catalogPage = '<div class = "products-container">';
 
         for (let i = 0; i < catalog[0].length; i++)
         {
@@ -71,24 +71,24 @@ const view = (catalog) =>
             catalogPage += buildCategoryProductsGrid(catalog[0][i], catalog[1]);
         }
 
-        catalogPage += `</div>`;
+        catalogPage += '</div>';
 
         return catalogPage;
     }
     else
     {
-        let categoryPage = `<div class = "products-container">`;
+        let categoryPage = '<div class = "products-container">';
         categoryPage += 
         `
             <br><h2>${page.name}</h2><br>
             <span>${page.description}</span><br>
         `;
         categoryPage += buildCategoryProductsGrid(page, catalog[1]);
-        categoryPage += `<div class = "products-container">`;
+        categoryPage += '<div class = "products-container">';
 
         return categoryPage;
     }
 
-}
+};
 
 export default view;

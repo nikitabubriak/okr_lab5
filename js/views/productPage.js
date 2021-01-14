@@ -6,7 +6,7 @@ const urlParser = (catalog) =>
     {
         if (catalog[1][i].url === subdir)   return catalog[1][i];
     }
-}
+};
 
 const view = (catalog) => 
 {
@@ -64,8 +64,8 @@ const view = (catalog) =>
         <h2>Related products</h2><br>
         <div class = "products-grid">
         ${
-            related.map((product) =>
-            `
+    related.map((product) =>
+        `
             <div class = "product-tile">
                 <a class = "product-link" href = "#product/${product.url}">
                     <img src = "${product.image}" alt = "${product.name}">
@@ -73,14 +73,14 @@ const view = (catalog) =>
                     <span class = "product-tile-price">${product.price} ₴</span>
                 </a>
             </div>
-            `).join("")
-        }
+            `).join('')
+}
         </div>
     </div>
     `;
 
     return productPage;
-}
+};
 
 
 export default view;

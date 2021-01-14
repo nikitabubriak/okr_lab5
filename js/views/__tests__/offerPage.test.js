@@ -6,12 +6,12 @@ describe('Offer Page Module', () => {
 
         let page = 
           {
-            url: "autumn_sale",
-            name: "Autumn Sale",
-            description: "The Steam Autumn Sale is now live!",
-            image: "resources/offers/autumn_sale.jpg",
-            datePosted: "01.12.2020"
-          }
+              url: 'autumn_sale',
+              name: 'Autumn Sale',
+              description: 'The Steam Autumn Sale is now live!',
+              image: 'resources/offers/autumn_sale.jpg',
+              datePosted: '01.12.2020'
+          };
         const offers = [page];
 
         const expectedResult = 

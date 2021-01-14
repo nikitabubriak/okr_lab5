@@ -1,6 +1,6 @@
-const view = (db) => 
+const view = () => 
 {
-    let totalPrice = JSON.parse(localStorage.getItem("totalPrice"));
+    let totalPrice = JSON.parse(localStorage.getItem('totalPrice'));
 
     let orderPage = 
     `
@@ -41,7 +41,7 @@ const view = (db) =>
     `;
     
     return orderPage;
-}
+};
 
 
 export default view;

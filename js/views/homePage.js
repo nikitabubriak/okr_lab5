@@ -49,8 +49,8 @@ const view = (db) =>
         <h2>Featured products</h2><br>
         <div class = "products-grid">
         ${
-            featured.map((product) =>
-            `
+    featured.map((product) =>
+        `
             <div class = "product-tile">
                 <a class = "product-link" href = "#product/${product.url}">
                     <img src = "${product.image}" alt = "${product.name}">
@@ -58,14 +58,14 @@ const view = (db) =>
                     <span class = "product-tile-price">${product.price} ₴</span>
                 </a>
             </div>
-            `).join("")
-        }
+            `).join('')
+}
         </div>
     </div>
     `;
     
     return homePage;
-}
+};
 
 
 export default view;
